@@ -1,5 +1,15 @@
-let contributions = [
-    `<div>Ryan - Radical Coder</div>`
-]
+    let contributions = [
+      {
+        name: "Ryan",
+        alias: "Radical Coder"
+      }
+      // Add more contributors here as objects
+    ];
 
-document.body.innerHTML = contributions.join('<br/>')
+    const container = document.getElementById("contributors");
+    container.innerHTML = contributions.map(c => `
+      <div class="contributor">
+        <div class="name">${c.name}</div>
+        <div class="alias">${c.alias}</div>
+      </div>
+    `).join('');

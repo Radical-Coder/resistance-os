@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Resistance OS Shrine</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #f2f2f2;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .contributor {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
+      border: 1px solid #333;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .contributor:hover {
+      box-shadow: 0 0 15px rgba(0, 255, 180, 0.2);
+      transform: scale(1.01);
+    }
+
+    .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00ffc8;
+    }
+
+    .alias {
+      font-size: 1rem;
+      color: #aaa;
+      margin-top: 0.25rem;
+    }
+  </style>
 </head>
 <body>
+  <h1>🛐 Contributors Shrine</h1>
 
-    <script src="contributors.js"></script>
-    
+  <div id="contributors"></div>
+
+
+  <script src="contributors.js"></script>
+
 </body>
 </html>
